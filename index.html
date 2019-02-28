@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Pet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />    
+</head>
+
+<body>
+    <main class="container">
+        <div id="game-off">            
+            <div class="flex-container column">
+                <img class="pet-avatar" src="images/pet-happy.png">
+                <h1 class="text-center">Have you been craving additional responsibility?</h1>
+                <p class="lead text-center">
+                    Do you desire to have a digital being's life completely dependent on your
+                    ability to click buttons to interact with it?
+                </p>
+                <p class="text-center">
+                    Well you've come to the right place.
+                    Fill out the inputs below and hit START GAME!
+                </p>
+            </div>
+            <div class="flex-container">
+                <div class="input-container flex-container">
+                    <label class="pet-name-label text-bold" for="pet-name">
+                        Pet Name:
+                    </label>
+                    <input name="pet-name" id="input-pet-name">
+                </div>
+                <div class="input-container flex-container">
+                    <label class="username-label text-bold" for="username">
+                        Your name:
+                    </label>
+                    <input name="username" id="input-username">
+                </div>
+                <div class="input-container flex-container">
+                    <button id="btnStartGame" type="submit" class="button button-submit">START GAME</button>
+                </div>
+            </div>
+        </div>
+        <div id="game-on" class="flex-container column hide">
+            <img class="pet-avatar" id="pet-avatar" src="images/pet-happy.png">
+
+            <div class="flex-container column">
+                <h1 class="pet-name"><strong>Name:</strong><span id="pet-name">____</span></h1>
+            </div>
+
+            <div class="flex-container flex-start">
+                <div>
+                    <div class="status">
+                        <h2 class="text-bold">Energy</h2>
+                        <p>
+                            <span id="energy-level">100</span> / 100
+                        </p>
+                    </div>
+
+                    <div class="status">
+                        <h2 class="text-bold">Boredom</h2>
+                        <p>
+                            <span id="fun-level">100</span> / 100
+                        </p>
+                    </div>
+
+                    <div class="status">
+                        <h2 class="text-bold">Happiness</h2>
+                        <p>
+                            <span id="happiness-level">100</span> / 100
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="interaction">
+                        <h2 class="text-bold">
+                            Feed
+                        </h2>
+                        <button id="btnFeedApple">Apple (+5)</button>
+                        <button id="btnFeedGranola">Granola (+25)</button>
+                        <button id="btnFeedSpaghetti">Spaghetti (+50)</button>
+                    </div>
+                    <div class="interaction">
+                        <h2 class="text-bold">
+                            Play
+                        </h2>
+                        <button id="btnPlayPet">Pet (+5)</button>
+                        <button id="btnPlayCuddle">Cuddle (+25)</button>
+                        <button id="btnPlayWalk">Walk (+50)</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <button id="btnQuitGame">Double Click Me to Quit Game</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
